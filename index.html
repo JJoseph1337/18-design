@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>18 Design</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <div class="menuOverlay"></div>
+        <div class="loginOverlay">
+          <div class="modal">
+            <div class="modalWindow">
+              <form class="modalForm">
+                <span class="modalClose">&times;</span>
+                <span class="modalTitle">Welcome ! </span>
+                <input
+                  type="text"
+                  class="input-white"
+                  placeholder="login name"
+                  id="username"
+                />
+                <input
+                  id="password"
+                  type="password"
+                  class="input-white"
+                  placeholder="password"
+                />
+                <button class="btn btn-dark modalBtn" type="submit" disabled>
+                  login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="signupOverlay">
+          <div class="modal">
+            <div class="modalWindow">
+              <form class="signupForm">
+                <span class="modalClose">&times;</span>
+                <span class="modalTitle">Welcome ! </span>
+                <input
+                  type="text"
+                  class="input-white"
+                  placeholder="create login"
+                  id="createlogin"
+                />
+                <input
+                  type="password"
+                  class="input-white"
+                  placeholder="create password"
+                  id="createpassword"
+                />
+                <input
+                  type="password"
+                  class="input-white"
+                  placeholder="repeat password"
+                  id="repeatpassword"
+                />
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  i agree with all terms
+                </div>
+                <button class="btn btn-dark modalBtn" type="submit" disabled>
+                  sign up
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a href="#">
+          <img src="./images/logoBlack.png" alt="logo" class="logo" />
+        </a>
+        <div class="headerActions">
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="#aboutUs">About Us</a></li>
+              <li class="menu__item"><a href="#howItWorks">How it works</a></li>
+              <li class="menu__item"><a href="#pricing">Pricing</a></li>
+              <li class="menu__item"><a href="#faqs">FAQs</a></li>
+            </ul>
+          </nav>
+          <div class="loginForm">
+            <button class="btn loginBtn">Login</button>
+            <button class="btn btn-dark signupBtn">Sign Up</button>
+          </div>
+        </div>
+        <a href="#" class="menuBurger"><span></span></a>
+      </header>
+      <main class="main">
+        <section class="section upperSection">
+          <article class="features">
+            <h1 class="heading">
+              Always Track & Analyze Your Business Statistics To Succeed.
+            </h1>
+            <p class="description">
+              A better way to manage your sales, team, clients & marketing — on
+              a single platform. Powerful, affordable & easy.
+            </p>
+            <form class="submitForm">
+              <input
+                type="email"
+                class="submitFormText"
+                placeholder="enter your email"
+              />
+              <input
+                type="button"
+                value="start"
+                class="submitFormBtn submitFormBtn-dark"
+              />
+            </form>
+            <div class="payMethods">
+              <img
+                src="./images/visa.png"
+                alt="visa"
+                class="payMethods__item"
+              />
+              <img
+                src="./images/mastercard.png"
+                alt="visa"
+                class="payMethods__item"
+              />
+              <img
+                src="./images/paypal.png"
+                alt="visa"
+                class="payMethods__item"
+              />
+            </div>
+          </article>
+          <img
+            src="./images/hero1desktop.png"
+            alt="hero image"
+            class="heroImg"
+          />
+        </section>
+        <section class="section aboutUsSection">
+          <article class="features">
+            <button class="introduceBtn" id="aboutUs">ABOUT US</button>
+            <h2 class="heading">
+              Faster, friendlier feedback loops make life easier.
+            </h2>
+            <p class="description">
+              Add a Viewer to your team so they can see everything you share, or
+              invite people to individual documents. It’s up to you.
+              Stakeholders can check out designs in their web browser, test
+              prototypes and leave feedback for free.
+            </p>
+            <ul class="featuresList">
+              <li class="featuresList__item">
+                Shared Cloud Libraries, for a single source of truth
+              </li>
+              <li class="featuresList__item">
+                Prototype previews for user testing and research
+              </li>
+              <li class="featuresList__item">
+                Easy organization with projects
+              </li>
+              <li class="featuresList__item">
+                Free developer handoff, right inside the browserTwo-factor
+                authentication and SSO
+              </li>
+              <li class="featuresList__item">
+                Two-factor authentication and SSO
+              </li>
+            </ul>
+          </article>
+
+          <img
+            src="./images/aboutUsHero.png"
+            alt="about us image"
+            class="heroImg"
+          />
+        </section>
+        <section class="section howItWorksSection">
+          <article class="features">
+            <button class="introduceBtn" id="howItWorks">HOW IT WORKS</button>
+            <h2 class="heading">Building the best space for collaboration.</h2>
+            <div class="cardContainer">
+              <div class="imgContainer">
+                <img src="./images/cardImg1.png" alt="card image" />
+              </div>
+              <div class="card">
+                <h3 class="heading">Shared Cloud Libraries</h3>
+                <p class="description">
+                  Navigate to the Your work panel in the left sidebar. Select
+                  the library you want to share. Select the Share icon in the
+                  upper right to share the library.
+                </p>
+              </div>
+            </div>
+            <div class="cardContainer">
+              <div class="imgContainer">
+                <img src="./images/cardImg2.png" alt="card image" />
+              </div>
+              <div class="card">
+                <h3 class="heading">Free developer handoff, right inside</h3>
+                <p class="description">
+                  Cloud Inspector makes it easy for developers to get the
+                  information they need to turn pixels into code — all in the
+                  browser and, most importantly, for free.
+                </p>
+              </div>
+            </div>
+            <div class="cardContainer">
+              <div class="imgContainer">
+                <img src="./images/cardImg3.png" alt="card image" />
+              </div>
+              <div class="card">
+                <h3 class="heading">Real-time collabo- rative editing</h3>
+                <p class="description">
+                  Room Service helps you build real-time collaborative features.
+                  Add real-time data sync! Let users edit the same data at the
+                  same time.
+                </p>
+              </div>
+            </div>
+            <div class="cardContainer">
+              <div class="imgContainer">
+                <img src="./images/cardImg4.png" alt="card image" />
+              </div>
+              <div class="card">
+                <h3 class="heading">Integrations with the Cloud API</h3>
+                <p class="description">
+                  Unlocking that value requires an iPaaS that delivers the
+                  transformative power of APIs and integration.
+                </p>
+              </div>
+            </div>
+          </article>
+          <img
+            src="./images/howItWorksHero.png"
+            alt="how it works section image"
+            class="heroImg"
+          />
+        </section>
+        <section class="section pricingSection">
+          <div class="pricingInfo">
+            <img
+              src="./images/pricingHero.png"
+              alt="pricingImg"
+              class="heroImg"
+            />
+            <article class="pricingInfo__text">
+              <button class="introduceBtn" id="pricing">PRICING</button>
+              <h2 class="heading">
+                Select a membership level the right price for you.
+              </h2>
+              <p class="description">
+                Prices listed in USD. Taxes may apply. By using program you
+                agree to our terms and policies.
+              </p>
+            </article>
+          </div>
+          <div class="pricingCards">
+            <div class="pricingCards__item">
+              <span class="price">49</span>
+              <p class="description">A pay-once license, just for you</p>
+              <ul class="featuresList">
+                <li class="featuresList__item">The Mac app yours to keep</li>
+                <li class="featuresList__item">Beautiful White_level</li>
+                <li class="featuresList__item">One year of saving Cloud</li>
+              </ul>
+              <button class="btn btn-dark">Join</button>
+            </div>
+            <div class="pricingCards__item pricingCards__item-dark">
+              <span class="price">99</span>
+              <p class="description">Pro account, just for you</p>
+              <ul class="featuresList">
+                <li class="featuresList__item featuresList__item-black">
+                  The Mac app yours to keep
+                </li>
+                <li class="featuresList__item featuresList__item-black">
+                  One year of Mac updates
+                </li>
+                <li class="featuresList__item featuresList__item-black">
+                  One year of saving to Cl
+                </li>
+                <li class="featuresList__item featuresList__item-black">
+                  A personal Cl workspace
+                </li>
+                <li class="featuresList__item featuresList__item-black">
+                  All tools, just for you
+                </li>
+              </ul>
+              <button class="btn btn-light">Join</button>
+            </div>
+            <div class="pricingCards__item pricingCards__item-light">
+              <span class="price">299</span>
+              <p class="description">A subscription for the whole team</p>
+              <ul class="featuresList">
+                <li class="featuresList__item">Access to the Mac for all</li>
+                <li class="featuresList__item">A shared Cloud workspace</li>
+                <li class="featuresList__item">Free Cl access for unlim</li>
+                <li class="featuresList__item">Easy team management</li>
+                <li class="featuresList__item">No license key required</li>
+              </ul>
+              <button class="btn btn-dark">Join</button>
+            </div>
+          </div>
+        </section>
+        <section class="section faqsSection">
+          <div class="faqsSection__info">
+            <button class="introduceBtn" id="faqs">FAQS</button>
+            <h2 class="heading">Common Questions.</h2>
+            <p class="description">
+              The online form also provides links to a set of frequently asked
+              questions, other information materials related to the financial
+              disclosure programme.
+            </p>
+            <div class="questions">
+              <div class="questions__item">
+                <div class="question">
+                  <h3>How much does a Teams subscription cost?</h3>
+                  <span></span>
+                </div>
+                <p class="desription answer">
+                  Contributors are members of your team who need access to use
+                  the Mac app to create and edit Sketch documents. These prices
+                  don’t include sales tax, which may still apply. Head over to
+                  our pricing page to get full details.
+                </p>
+              </div>
+              <div class="questions__item">
+                <div class="question">
+                  <h3>Do I still need to purchase licenses for the Mac app?</h3>
+                  <span></span>
+                </div>
+                <p class="desription answer">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Necessitatibus laudantium odit ut, repudiandae dolorum in
+                  accusantium dolores minima magnam atque natus eius!
+                  Repellendus, quaerat odio.
+                </p>
+              </div>
+              <div class="questions__item">
+                <div class="question">
+                  <h3>
+                    What are the differences between Contributors and Viewers?
+                  </h3>
+                  <span></span>
+                </div>
+                <p class="desription answer">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur, ipsum.
+                </p>
+              </div>
+              <div class="questions__item">
+                <div class="question">
+                  <h3>How long does the free Teams subscription trial last?</h3>
+                  <span></span>
+                </div>
+                <p class="desription answer">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum sed doloribus est error delectus nihil sequi atque
+                  ratione vitae. Rerum!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="imgContainer">
+            <img src="./images/faqsHero.png" alt="faqs image" class="heroImg" />
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footerContent">
+        <div class="footerHead">
+          <div class="footerInfo">
+            <div class="logoandemail">
+              <div class="footerLogo">
+                <img src="./images/logoWhite.png" alt="" class="logo" />
+              </div>
+              <div class="email">
+                <span class="emailTitle">Email</span>
+                <p class="emailText">info@the18.design</p>
+              </div>
+            </div>
+            <div class="socials">
+              <div class="socialsIcons">
+                <a href="https://www.facebook.com" target="_blank">
+                  <img
+                    src="./images/fb.png"
+                    alt="fb"
+                    class="socialsIcons__item"
+                  />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <img
+                    src="./images/tw.png"
+                    alt="twitter"
+                    class="socialsIcons__item"
+                  />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img
+                    src="./images/g.png"
+                    alt="google"
+                    class="socialsIcons__item"
+                  />
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                  <img
+                    src="./images/in.png"
+                    alt="in"
+                    class="socialsIcons__item"
+                  />
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                  <img
+                    src="./images/yt.png"
+                    alt="youtube"
+                    class="socialsIcons__item"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footerLists">
+            <ul class="menuList">
+              <li class="menuList__item"><a href="#"> About us</a></li>
+              <li class="menuList__item"><a href="">How it works</a></li>
+              <li class="menuList__item"><a href="">Pricing</a></li>
+              <li class="menuList__item"><a href="">FAQs</a></li>
+            </ul>
+            <ul class="menuList">
+              <li class="menuList__item"><a href="">Lead generation</a></li>
+              <li class="menuList__item"><a href="">Customer engagement</a></li>
+              <li class="menuList__item"><a href="">Customer support</a></li>
+              <li class="menuList__item">
+                <a href="">Help Center Articles</a>
+              </li>
+              <li class="menuList__item"><a href="">Outbound Messages</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div class="subscribe">
+            <span class="heading">Want to recieve our awesome stories?</span>
+            <form class="submitForm">
+              <input
+                type="email"
+                class="submitFormText submitFormText-dark"
+                placeholder="enter your email"
+              />
+              <input
+                type="button"
+                value="subscribe"
+                class="submitFormBtn submitFormBtn-light"
+              />
+            </form>
+          </div>
+          <span>© 18 Design, all rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
