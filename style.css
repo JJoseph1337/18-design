@@ -250,6 +250,7 @@ ul {
 
 .headerActions-active {
   display: flex;
+  background-color: yellow;
 }
 
 .loginForm {
@@ -879,7 +880,7 @@ button[type='submit']:disabled {
 
   /* pricing section */
 
-  .pricingSection{
+  .pricingSection {
     gap: 44px;
   }
 
