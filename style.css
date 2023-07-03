@@ -235,21 +235,25 @@ ul {
 /* menu */
 
 .headerActions {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: absolute;
-  right: 0;
   top: 0;
   background: white;
   height: 100vh;
   z-index: 50;
   width: 75%;
-  animation: animateright;
-  animation-duration: 0.4s;
+}
+
+
+.headerActions:not(.headerActions-active) {
+  transform: translate(130%, 0);
+  transition: transform 0.4s;
 }
 
 .headerActions-active {
-  display: flex;
+  transform: translate(30%, 0);
+  transition: transform 0.4s;
 }
 
 .loginForm {
@@ -376,7 +380,7 @@ ul {
   animation-duration: 0.4s;
 }
 
-@keyframes animatetop {
+/* @keyframes animatetop {
   from {
     top: -300px;
     opacity: 0;
@@ -386,7 +390,7 @@ ul {
     top: 0;
     opacity: 1;
   }
-}
+} */
 
 @keyframes animateright {
   from {
@@ -400,7 +404,7 @@ ul {
   }
 }
 
-@keyframes animateclose {
+/* @keyframes animateclose {
   from {
     right: 0;
     opacity: 1;
@@ -409,7 +413,7 @@ ul {
     right: -300px;
     opacity: 0;
   }
-}
+} */
 
 .modalClose {
   position: absolute;
